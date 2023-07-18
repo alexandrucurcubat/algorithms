@@ -1,5 +1,3 @@
-const testArray = [9, 3, 7, 4, 69, 420, 42];
-
 function partition(array, start, stop) {
   const pivot = array[stop];
   let index = start - 1;
@@ -36,5 +34,3 @@ function quickSort(array) {
 
   return array;
 }
-
-console.log(quickSort(testArray));

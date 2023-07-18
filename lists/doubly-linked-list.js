@@ -147,11 +147,3 @@ class DoublyLinkedList {
     return this.#tail;
   }
 }
-
-const list = new DoublyLinkedList();
-list.append('item2');
-list.prepend('item0');
-list.insertAt('item1', 1);
-
-console.log('head', list.getHead());
-console.log('tail', list.getTail());

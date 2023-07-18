@@ -46,18 +46,3 @@ class Stack {
     return this.#head?.value;
   }
 }
-
-const stack = new Stack();
-
-stack.push('item1');
-stack.push('item2');
-stack.push('item3');
-stack.push('item4');
-stack.push('item5');
-stack.pop();
-stack.pop();
-stack.pop();
-stack.pop();
-
-console.log(stack);
-console.log(stack.peek());

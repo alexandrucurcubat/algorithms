@@ -47,17 +47,3 @@ class Queue {
     return this.#head?.value;
   }
 }
-
-const queue = new Queue();
-
-queue.enqueue('item1');
-queue.enqueue('item2');
-queue.enqueue('item3');
-queue.enqueue('item4');
-queue.enqueue('item5');
-queue.deque();
-queue.deque();
-queue.deque();
-queue.deque();
-
-console.log(queue);
