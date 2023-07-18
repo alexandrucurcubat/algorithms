@@ -18,19 +18,15 @@ function partition(array, start, stop) {
   return index;
 }
 
-function qs(array, start, stop) {
+function quickSort(array, start = 0, stop = array.length - 1) {
   if (start >= stop) {
     return;
   }
 
   const pivotIndex = partition(array, start, stop);
 
-  qs(array, start, pivotIndex - 1);
-  qs(array, pivotIndex + 1, stop);
-}
-
-function quickSort(array) {
-  qs(array, 0, array.length - 1);
+  quickSort(array, start, pivotIndex - 1);
+  quickSort(array, pivotIndex + 1, stop);
 
   return array;
 }
